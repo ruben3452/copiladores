@@ -1,0 +1,23 @@
+
+
+program fibonacci;
+
+constan LAST = 30;                                       
+var n : integer;                                
+
+
+function fib(n : int) : int ;
+begin
+        if n <= 1 then                                  
+                fib := 1;
+        fib := fib(n-1) + fib(n-2)
+end;
+
+begin
+	n := 0;
+	while n < LAST do  
+ 	begin
+                write(fibonacci(n));   
+                n := n + 1                              
+        end
+end.
